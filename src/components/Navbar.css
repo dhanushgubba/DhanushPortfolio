@@ -1,0 +1,116 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: #2C2C2C;
+    padding: 0 3%;
+    align-items: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Navbar Title */
+.navbar h1 {
+    color: #fff;
+    margin: 10px auto;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: fadeIn 2s infinite;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    gap: 25px;
+}
+
+/* Nav Link */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Global Anchor Styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    html, body {
+        background-color: #121212;
+        color: #ecf0f1;
+    }
+
+    .navbar-container {
+        background-color: #000;
+    }
+
+    .navbar h1, .nav-link {
+        color: #ecf0f1;
+    }
+
+    .nav-link:hover {
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
