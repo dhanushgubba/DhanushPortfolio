@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #2C2C2C;
 }
 
 html, body {
@@ -29,8 +30,17 @@ html, body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    animation: fadeIn 3s ease-in-out;
 }
 
+@keyframes fadeIn {
+    from  {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 /* Navbar Title */
 .navbar h1 {
     color: #fff;
