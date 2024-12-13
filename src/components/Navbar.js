@@ -2,7 +2,7 @@ import React from "react";
 import './Navbar.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faInfoCircle, faTrophy, faProjectDiagram, faLaptopCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faInfoCircle, faTrophy, faProjectDiagram , faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     return (
@@ -23,9 +23,9 @@ const Navbar = () => {
                     <a href="/projects" className="nav-link">
                         <FontAwesomeIcon icon={faProjectDiagram} /> Projects
                     </a>
-                    <a href="/techstacks" className="nav-link">
+                    {/*<a href="/techstacks" className="nav-link">
                         <FontAwesomeIcon icon={faLaptopCode} /> Tech Stacks
-                    </a>
+                    </a>*/}
                     <a href="/contact" className="nav-link">
                         <FontAwesomeIcon icon={faEnvelope} /> Contact
                     </a>
