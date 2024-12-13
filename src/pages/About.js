@@ -3,6 +3,18 @@ import './About.css';
 import AboutImage from '../images/image.jpg';
 
 const About = () => {
+
+    const onButtonClick = () => {
+        const pdfUrl = process.env.PUBLIC_URL + "/ResumeApplication.pdf";
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "resume.pdf";
+    
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+    
     return (
         <div className="about-section">
             <div className="container">
@@ -17,8 +29,7 @@ const About = () => {
                             I enjoy learning new technologies and constantly improving my skills. In my free time, I work on personal projects and contribute to open-source.
                         </p>
                         
-                        <a href="images/ResumeApplication.pdf" class="btn" download="ResumeApplication.pdf">Download Resume</a>
-
+                        <button className="btn" onClick={onButtonClick}> Download My Resume</button>
                     </div>
                     <div className="about-image">
                         <img src={AboutImage} alt="About Me" />
@@ -59,7 +70,7 @@ const About = () => {
                             <ul>
                                 <li><i className="fa fa-html5"></i> HTML</li>
                                 <li><i className="fa fa-css3"></i> CSS</li>
-                                <li><i className="fa fa-js"></i> JavaScript</li>
+                                <li><i className="fa fa-javascript"></i> JavaScript</li>
                                 <li><i className="fab fa-react"></i> React</li>
                             </ul>
                         </div>
@@ -87,8 +98,18 @@ const About = () => {
                                 <li><i className="fab fa-github"></i> GitHub</li>
                             </ul>
                         </div>
+                        <div className="skills-group">
+                            <h3>Programming Skills</h3>
+                            <ul>
+                                <li>C</li>
+                                <li>Java</li>
+                                <li>Data Strucutures(Basic)</li>
+                            </ul>
+                        </div>
                     </div>
-                    <p className="footer-class">Made By Dhanush using <i className="fab fa-react"></i>React JS</p>
+                    <div className="footer">
+                        <p>Made By Dhanush using <i className="fab fa-react"></i>React JS</p>
+                    </div>
                     <div className="social-icons">
                         <a href="https://www.linkedin.com/in/gubba-venkata-naga-dhanush-43151b255/" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <i className="fab fa-linkedin"></i>

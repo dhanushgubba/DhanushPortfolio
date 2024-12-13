@@ -1,0 +1,39 @@
+.achievements {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.achievements h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; 
+    flex-direction: row;
+}
+.achievements-container h2 {
+    font-size: 14pt;
+}
+
+.achievement-image{
+    margin-bottom: 20px;
+}
+.achievements-container img {
+    cursor: pointer;
+    border-radius: 50px;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease, box-shadow 1.3s ease; /* Smooth transition */
+}
+
+.achievements-container img:hover {
+    transform: translateY(-15px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 2.2); 
+    transform: scale(1.05); 
+}

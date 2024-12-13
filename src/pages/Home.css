@@ -117,8 +117,6 @@
 
 .footer p {
     margin-top: 15px;
-
-    color: #ffffff;
     font-weight: bold;
     text-align: center;
     font-size: 14pt;
@@ -128,13 +126,14 @@
     text-align: center;
 }
 
+/* Social icon styles */
 .social-icon {
     margin: 0 15px;
     font-size: 24px;
-    color: #ffffff;
+    color: #00C9FF; /* Set default color */
     transition: color 0.3s ease;
 }
 
 .social-icon:hover {
-    color: #00C9FF; /* Change color on hover */
+    color: #00C9FF; /* Keep the same color on hover */
 }

@@ -22,7 +22,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="footer">
-                <p>Made By Dhanush using <i className="fab fa-react"></i>React JS</p>
+                <p>Made By Dhanush using <i className="fab fa-react"></i> React JS</p>
                 <div className="social-icons">
                     <a href="https://www.linkedin.com/in/gubba-venkata-naga-dhanush-43151b255/" target="_blank" rel="noopener noreferrer" className="social-icon">
                         <i className="fab fa-linkedin"></i>
