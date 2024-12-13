@@ -33,6 +33,7 @@ html, body {
 
 /* Navbar Title */
 .navbar h1 {
+    margin-top: 10px;
     color: #fff;
     font-size: 26px;
     font-weight: bold;
