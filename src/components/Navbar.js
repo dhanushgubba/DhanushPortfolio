@@ -2,7 +2,7 @@ import React from "react";
 import './Navbar.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faInfoCircle, faTrophy, faGift, faProjectDiagram, faLaptopCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faInfoCircle, faTrophy, faProjectDiagram, faLaptopCode, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
     return (
@@ -19,9 +19,6 @@ const Navbar = () => {
                     </a>
                     <a href="/achievements" className="nav-link">
                         <FontAwesomeIcon icon={faTrophy} /> Achievements
-                    </a>
-                    <a href="/perks" className="nav-link">
-                        <FontAwesomeIcon icon={faGift} /> Perks
                     </a>
                     <a href="/projects" className="nav-link">
                         <FontAwesomeIcon icon={faProjectDiagram} /> Projects
