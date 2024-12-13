@@ -33,20 +33,15 @@ html, body {
 
 /* Navbar Title */
 .navbar h1 {
-<<<<<<< HEAD
     margin-top: 40px;
     color: #fff;
-    font-size: 30px;
-=======
-    margin-top: 20px;
-    color: #fff;
     font-size: 26px;
->>>>>>> 5bf5e7b94ad8e76cb441dec78cad40b0f197c8e2
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     animation: fadeIn 2s infinite;
 }
+
 
 /* Navbar Links */
 .navbar-links {
